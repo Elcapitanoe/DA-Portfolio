@@ -1,275 +1,105 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <title>Domi Adiwijaya
-    </title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta name="generator" content="Visual Code Studio">
-    <meta name="description"
-          content="Explore Domi Adiwijaya's portfolio, blogs, and open-source contributions by a professional Tech Enthusiast." />
-    <meta property="og:title" content="Domi Adiwijaya | Tech Enthusiast" />
-    <meta property="og:description"
-          content="Dive into the creative work of Domi Adiwijaya, tech insights, and open-source projects." />
-    <meta property="og:image" content="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png" />
-    <link rel="icon" href="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo-circle.png" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="Domi Adiwijaya" />
-    <meta name="language" content="en" />
-    <link rel="canonical" href="https://domiadi.com" />
-    <link rel="manifest"
-          href="data:application/manifest+json;base64,ewogICJuYW1lIjoiRG9taSBBZGl3aWpheWEiLAogICJzaG9ydF9uYW1lIjoiRG9taSBBZGl3aWpheWEiLAogICJzdGFydF91cmwiOiJodHRwczovL2RvbWlhZGkuY29tLyIsCiAgImRpc3BsYXkiOiJzdGFuZGFsb25lIiwKICAiaWNvbnMiOlsKICAgIHsic3JjIjoiaHR0cHM6Ly9pLmltZ3VyLmNvbS9sd2VjcW5WLnBuZyIsInNpemVzIjoiMTkyeDE5MiIsInR5cGUiOiJpbWFnZS9wbmcifSwKICAgIHsic3JjIjoiaHR0cHM6Ly9pLmltZ3VyLmNvbS9sd2VjcW5WLnBuZyIsInNpemVzIjoiNTEyeDUxMiIsInR5cGUiOiJpbWFnZS9wbmcifQogIF0sCiAgInRoZW1lX2NvbG9yIjoiI2ZmZmZmZiIsCiAgImJhY2tncm91bmRfY29sb3IiOiIjZmZmZmZmIgp9" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo-circle.png" />
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://domiadi.com" />
-    <meta property="og:site_name" content="Domi Adiwijaya Portfolio" />
-    <meta property="og:locale" content="en_US" />
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Domi Adiwijaya | Tech Enthusiast" />
-    <meta name="twitter:description"
-          content="Tech wizardry and tech musings by Domi Adiwijaya, explore projects, articles, and code snippets." />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png" />
-    <meta name="twitter:site" content="@domiadiwijaya" />
-    <meta name="twitter:creator" content="@domiadiwijaya" />
-    <!-- JSON-LD Organization -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "https://domiadi.com",
-        "name": "Domi Adiwijaya",
-        "logo": "https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png",
-        "sameAs": [
-          "https://www.linkedin.com/in/domiadiwijaya",
-          "https://github.com/elcapitanoe",
-          "https://instagram.com/domi.adiwijaya",
-          "https://x.com/domiadiwijaya"
-        ]
-      }
-    </script>
-    <!-- JSON-LD Person -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Domi Adiwijaya",
-        "url": "https://domiadi.com",
-        "image": "https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png",
-        "jobTitle": "Tech Enthusiast",
-        "description": "Professional Tech Enthusiast specializing in innovative tech solutions and open-source collaborations.",
-        "sameAs": [
-          "https://www.linkedin.com/in/domiadiwijaya",
-          "https://github.com/elcapitanoe",
-          "https://instagram.com/domi.adiwijaya",
-          "https://x.com/domiadiwijaya"
-        ]
-      }
-    </script>
-    <!-- CSS -->
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: #0f172a;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        color: #ffffff;
-        line-height: 1.5;
-        overflow-x: hidden;
-        min-height: 100vh;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 32px 16px;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .page {
-        display: none;
-        min-height: 100vh;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.6s ease-in-out;
-      }
-      .page.active {
-        display: flex;
-        opacity: 1;
-        pointer-events: auto;
-      }
-      .profile-card {
-        background-color: #1e293b;
-        padding: 48px;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        width: 100%;
-      }
-      .social-card {
-        background-color: #1e293b;
-        padding: 20px;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-        width: 100%;
-      }
-      .profile-image {
-        width: 128px;
-        height: 128px;
-        border-radius: 50%;
-        margin: 0 auto 16px;
-        border: 4px solid #64748b;
-        object-fit: cover;
-        display: block;
-      }
-      .profile-name {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 4px;
-        color: #f8fafc;
-        white-space: nowrap;
-      }
-      .profile-title {
-        color: #94a3b8;
-        font-size: 16px;
-        margin-bottom: 24px;
-        white-space: nowrap;
-      }
-      .social-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-      }
-      .social-btn {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: transform 0.4s ease, background-color 0.3s ease;
-        cursor: pointer;
-        background-color: #0f172a;
-      }
-      .social-btn:hover {
-        transform: scale(1.08) rotate(4deg);
-        background-color: #37508c;
-      }
-      .social-btn img {
-        width: 24px;
-        height: 24px;
-      }
-      .floating-element {
-        animation: float 5s ease-in-out infinite;
-      }
-      .domi-grid-row {
-        display: flex;
-        gap: 24px;
-        padding: 16px 0;
-        width: 100%;
-      }
-      .domi-grid-column {
-        flex: 1;
-      }
-      @keyframes float {
-        0%, 100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-8px);
-        }
-      }
-      @media (max-width: 992px) {
-        .container {
-          max-width: 448px;
-        }
-        .domi-grid-row {
-          flex-direction: column;
-        }
-        .social-links {
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        .profile-name, .profile-title {
-          white-space: normal;
-        }
-      }
-      @media (max-width: 768px) {
-        .container {
-          padding: 24px 16px;
-        }
-      }
-      @media (max-width: 480px) {
-        .container {
-          padding: 16px;
-        }
-        .profile-card {
-          padding: 24px;
-        }
-        .social-links {
-          gap: 12px;
-        }
-        .profile-image {
-          width: 96px;
-          height: 96px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <section id="homePage" class="page active">
-        <div class="container">
-          <div class="domi-grid-row">
-            <div class="domi-grid-column">
-              <div class="profile-card floating-element">
-                <header>
-                  <img src="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/domi-circle.png" alt="Foto Domi Adiwijaya" class="profile-image"/>
-                  <h1 class="profile-name">Domi Adiwijaya
-                  </h1>
-                  <p class="profile-title">Tech and HomeLab Enthusiast
-                  </p>
-                </header>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="generator" content="GrapesJS Studio" />
+  <meta name="description" content="Explore Domi Adiwijaya's portfolio, blogs, and open-source contributions by a professional Tech Enthusiast." />
+  <meta property="og:title" content="Domi Adiwijaya | Tech Enthusiast" />
+  <meta property="og:description" content="Dive into the creative work of Domi Adiwijaya, tech insights, and open-source projects." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png" />
+  <link rel="icon" href="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo-circle.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="author" content="Domi Adiwijaya" />
+  <meta name="language" content="en" />
+  <link rel="canonical" href="https://domiadi.com" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo-circle.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://domiadi.com" />
+  <meta property="og:site_name" content="Domi Adiwijaya Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Domi Adiwijaya | Tech Enthusiast" />
+  <meta name="twitter:description" content="Tech wizardry and tech musings by Domi Adiwijaya, explore projects, articles, and code snippets." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png" />
+  <meta name="twitter:site" content="@domiadiwijaya" />
+  <meta name="twitter:creator" content="@domiadiwijaya" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Domi Adiwijaya</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://domiadi.com",
+      "name": "Domi Adiwijaya",
+      "logo": "https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/domiadiwijaya",
+        "https://github.com/elcapitanoe",
+        "https://instagram.com/domi.adiwijaya",
+        "https://x.com/domiadiwijaya"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Domi Adiwijaya",
+      "url": "https://domiadi.com",
+      "image": "https://raw.githubusercontent.com/Elcapitanoe/DA-Portfolio/master/images/da-logo.png",
+      "jobTitle": "Tech Enthusiast",
+      "description": "Professional Tech Enthusiast specializing in innovative tech solutions and open-source collaborations.",
+      "sameAs": [
+        "https://www.linkedin.com/in/domiadiwijaya",
+        "https://github.com/elcapitanoe",
+        "https://instagram.com/domi.adiwijaya",
+        "https://x.com/domiadiwijaya"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <section id="homePage" class="page active">
+      <div class="container">
+        <div class="domi-grid-row">
+          <div class="domi-grid-column">
+            <div class="profile-card floating-element">
+              <header>
+                <img src="https://i.imgur.com/dHDizF0.png" alt="Foto Domi Adiwijaya" class="profile-image"/>
+                <h1 class="profile-name">Domi Adiwijaya</h1>
+                <p class="profile-title">Tech and HomeLab Enthusiast</p>
+              </header>
             </div>
-            <div class="domi-grid-column">
-              <div class="social-card floating-element">
-                <nav aria-label="Social Links" class="social-links">
-                  <a href="https://instagram.com/domi.adiwijaya" target="_blank" aria-label="Instagram" class="social-btn">
-                    <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/instagram.svg" alt="Instagram">
-                  </a>
-                  <a href="https://x.com/domiadiwijaya" target="_blank" aria-label="X (Twitter)" class="social-btn">
-                    <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/twitter.svg" alt="Twitter">
-                  </a>
-                  <a href="mailto:mail@domiadi.com" target="_blank" aria-label="Email" class="social-btn">
-                    <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/mail.svg" alt="Email">
-                  </a>
-                  <a href="https://cloud.domiadi.com" target="_blank" aria-label="Cloud Server" class="social-btn">
-                    <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/server.svg" alt="Cloud">
-                  </a>
-                  <a href="https://status.domiadi.com" target="_blank" aria-label="Status Monitor" class="social-btn">
-                    <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/monitor.svg" alt="Status">
-                  </a>
-                </nav>
-              </div>
+          </div>
+          <div class="domi-grid-column">
+            <div class="social-card floating-element">
+              <nav aria-label="Social Links" class="social-links">
+                <a href="https://instagram.com/domi.adiwijaya" target="_blank" aria-label="Instagram" class="social-btn">
+                  <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://x.com/domiadiwijaya" target="_blank" aria-label="X (Twitter)" class="social-btn">
+                  <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/twitter.svg" alt="Twitter">
+                </a>
+                <a href="mailto:mail@domiadi.com" target="_blank" aria-label="Email" class="social-btn">
+                  <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/mail.svg" alt="Email">
+                </a>
+                <a href="https://cloud.domiadi.com" target="_blank" aria-label="Cloud Server" class="social-btn">
+                  <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/server.svg" alt="Cloud">
+                </a>
+                <a href="https://status.domiadi.com" target="_blank" aria-label="Status Monitor" class="social-btn">
+                  <img src="https://raw.githubusercontent.com/Elcapitanoe/feather-icon/refs/heads/main/icons/monitor.svg" alt="Status">
+                </a>
+              </nav>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
 </html>
