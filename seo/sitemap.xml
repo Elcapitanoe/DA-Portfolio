@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://domiadi.com/</loc>
-  </url>
+  <url><loc>https://domiadi.com/</loc></url>
+  <url><loc>https://www.domiadi.com/</loc></url>
+  <url><loc>https://cloud.domiadi.com/</loc></url>
+  <url><loc>https://goindex.domiadi.com/</loc></url>
+  <url><loc>https://hasher.domiadi.com/</loc></url>
+  <url><loc>https://porto2.domiadi.com/</loc></url>
+  <url><loc>https://porto3.domiadi.com/</loc></url>
+  <url><loc>https://prop.domiadi.com/</loc></url>
+  <url><loc>https://status.domiadi.com/</loc></url>
+  <url><loc>https://tporto.domiadi.com/</loc></url>
+  <url><loc>https://xporto.domiadi.com/</loc></url>
+  <url><loc>http://sf.domiadi.com/</loc></url>
 </urlset>
